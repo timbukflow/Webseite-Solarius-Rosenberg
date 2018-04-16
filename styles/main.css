@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    font-family: "Tinos", "Times New Roman", serif;
+    font-weight: 400;
+    color: rgb(50, 50, 50);
+}
+
+h1 {
+    font-size: 34px;
+	letter-spacing: 5px;
+    line-height: 1.2;
+	text-align: left;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 1.2;
+	letter-spacing: 4px;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+
+}
+
+p {
+    font-size: 20px;
+	line-height: 1.4;
+	letter-spacing: 0.5px;
+	text-align: center;
+    
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+}
+
+/*---------------------------------- 
+header nav styles
+-----------------------------------*/
+#nav-container {
+    background-color: whitesmoke;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.nav-25-left  {
+    width: 32%;
+}
+
+.nav-25-left img{
+    float: left;   
+}
+
+.solarius-logo {
+    padding-left: 16px;
+    display: inline-block;
+    letter-spacing: 5;
+}
+
+.topnav {
+    list-style-type: none;
+    width: 68%;
+    padding: 0;
+    margin: 0; 
+    text-align: right;
+    cursor: pointer;
+}
+
+.topnav a {
+    display: inline-block;
+    padding: 13px 7px;
+    color: rgb(180, 180, 180);
+    font-family: 'Tinos', "Times New Roman", serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.live {
+    color: red;
+    vertical-align: middle;
+}
+
+.pulse {
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 0px;
+    color: red;
+    animation: pulsate 2.5s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 0.25;
+}
+
+@-webkit-keyframes pulsate {
+    0% {opacity: 0.25;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.25;}
+}
+
+/*---------------------------------- 
+responsive nav styles
+-----------------------------------*/
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 930px) {
+    .nav-25-left {width: 90%;}
+    .nav-75-right {width: 10%}
+    .topnav a {
+      display: none;
+    }
+    
+    .topnav a.icon {
+        display: block;
+        padding: 10px 10px; 
+    }
+}
+
+@media screen and (max-width: 930px) {
+  .topnav.responsive a {
+    display: block;
+  }
+}
+
+
+/*---------------------------------- 
+fullscreen imag styles
+-----------------------------------*/
+
+.header-img {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1; 
+}
+
+.header-img-start {background-image: url("../img/header-img-solarius.jpg");}
+.header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
+
+/*---------------------------------- 
+section-stage-styles
+-----------------------------------*/
+
+.section-stage-container {
+    z-index: 2;
+    position: relative;
+    bottom: 80px;
+    width: 90%;
+    padding-right: 5%;
+    float: right
+}
+
+.section-line-rosenberg h1 {
+    text-align: right;
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px rgba(40, 40, 40, 0.5);
+}
+
+
+/*---------------------------------- 
+article-main-styles
+-----------------------------------*/
+
+.article-main-container {
+    text-align: center;
+    margin-top: 120px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+    .article-main-title {
+        margin-top: 34px;
+    }
+
+    .article-main-p {
+        margin: 0 auto;
+        margin-top: 50px;
+        max-width: 760px;
+        text-align: center;
+    }
+
+    .article-img-container img {
+        margin-top: 150px; 
+        width: 100%;
+        height: auto;  
+    }
+
+
+/*---------------------------------- 
+article-main-styles
+-----------------------------------*/
+.article-second-container {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.article-50-container .article-50-line {
+    padding: 0;
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    float: left;
+    padding: 0 12px;
+    text-align: left;
+    box-sizing: border-box  
+}
+
+.article-50-container h1 {
+    letter-spacing: 1.75px;
+    line-height: 1.2;
+}
+
+/*---------------------------------- 
+footer styles
+-----------------------------------*/
+
+.footer-container {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer-25 {
+    list-style-type: none;
+    padding: 0;
+    width: 25%;
+    padding: 6px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.footer-line h4 {
+    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-left: 6px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+    letter-spacing: 0.75;
+}
+
+.footer-title {
+    color: rgb(40, 40, 40);
+}
+
+.footer-line h4:hover {
+    color: rgb(40, 40, 40);
+}
+
+@media only screen and (max-width: 1040px) {
+    .footer-25 {
+        width: 48%;
+        margin: 0 1%;
+        margin-bottom: 20px;
+        float: left
+    }
+}
+
+/*---------------------------------- 
+a links
+-----------------------------------*/
+a:link {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: darkred;
+    text-decoration: none;
+}
