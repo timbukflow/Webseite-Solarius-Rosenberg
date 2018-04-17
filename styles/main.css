@@ -67,7 +67,7 @@ a:active {
     text-decoration: none;
 }
 
-.active-side{
+.active-site{
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);;
     padding-bottom: 8px;
 }
@@ -160,9 +160,7 @@ responsive nav styles
 @media screen and (max-width: 930px) {
     .nav-25-left {width: 90%;}
     .nav-75-right {width: 10%}
-    .topnav a {
-      display: none;
-    }
+    .topnav a {display: none;}
     
     .topnav a.icon {
         display: block;
@@ -239,19 +237,16 @@ article-main-styles
 
     .article-img-container{ 
         position: relative;
-    }
-
-    .article-img-container img { 
         width: 100%;
         height: auto;
-        position: relative;
     }
+
 /*---------------------------------- 
-Dropdown-Bottom-styles
+Dropdown-Bottom-Styles
 -----------------------------------*/
+
 .dropdown  {
     position: absolute;
-   
 }
 
 .plus-1 {top: 47%; left: 12%;}
@@ -286,16 +281,26 @@ Dropdown-Bottom-styles
     left: 22px;
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 200px
+    width: 220px
 }
 
 .dropdown-content ul {
     list-style-type: none;
     text-align: left;
     color: black;
-    padding: 12px 16px;
+    padding: 14px 16px 20px 16px;
     margin: 0;
     display: block;
+}
+
+.dropdown-line h4 {
+    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-left: 6px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    letter-spacing: 0.6px;
 }
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -377,7 +382,7 @@ footer styles
     box-sizing: border-box;
 }
 
-.footer-line h4 {
+.footer-25 h4 {
     padding-bottom: 8px;
     padding-top: 10px;
     padding-left: 6px;
@@ -391,7 +396,7 @@ footer styles
     color: rgba(0, 0, 0, 1);
 }
 
-.footer-line h4:hover {
+.footer-25 h4:hover {
     color: rgb(40, 40, 40);
 }
 
