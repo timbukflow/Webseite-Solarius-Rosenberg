@@ -32,15 +32,44 @@ h3 {
 }
 
 p {
-    font-size: 20px;
-	line-height: 1.4;
+    font-size: 19px;
+	line-height: 1.5;
 	letter-spacing: 0.5px;
 	text-align: center;
+    color: rgba(0, 0, 0, 0.7);
     
     -webkit-hyphens: manual;
     -moz-hyphens: manual;
     -ms-hyphens: manual;
     hyphens: manual;
+}
+/*---------------------------------- 
+a links
+-----------------------------------*/
+
+a:link {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a:active {
+    color: #ff5c2a;
+    text-decoration: none;
+}
+
+.active-side{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);;
+    padding-bottom: 8px;
 }
 
 /*---------------------------------- 
@@ -86,12 +115,10 @@ header nav styles
 .topnav a {
     display: inline-block;
     padding: 13px 7px;
-    color: rgb(180, 180, 180);
     font-family: 'Tinos', "Times New Roman", serif;
     font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    
 }
 
 .live {
@@ -108,6 +135,12 @@ header nav styles
     opacity: 0.25;
     position: relative;
     bottom: 1px;
+}
+
+@keyframes pulsate {
+    0% {opacity: 0.25;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.25;}
 }
 
 @-webkit-keyframes pulsate {
@@ -152,12 +185,13 @@ fullscreen imag styles
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 95vh;
+    top: 5vh;
     position: relative;
     z-index: 1; 
 }
 
-.header-img-start {background-image: url("../img/header-img-solarius.jpg");}
+.header-img-start {background-image: url("../img/solarius-rosenberg-home-header.jpg");}
 .header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
 
 /*---------------------------------- 
@@ -167,7 +201,7 @@ section-stage-styles
 .section-stage-container {
     z-index: 2;
     position: relative;
-    bottom: 80px;
+    bottom: 45px;
     width: 90%;
     padding-right: 5%;
     float: right
@@ -179,14 +213,13 @@ section-stage-styles
     text-shadow: 0px 0px 10px rgba(40, 40, 40, 0.5);
 }
 
-
 /*---------------------------------- 
 article-main-styles
 -----------------------------------*/
 
 .article-main-container {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 200px;
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
@@ -199,7 +232,7 @@ article-main-styles
     .article-main-p {
         margin: 0 auto;
         margin-top: 50px;
-        margin-bottom: 100px;
+        margin-bottom: 180px;
         max-width: 760px;
         text-align: center;
     }
@@ -221,17 +254,17 @@ Dropdown-Bottom-styles
    
 }
 
-.plus-1 {top: 47%; left: 8%;}
-.plus-2 {top: 42%; left: 20%;}
-.plus-3 {top: 37%; left: 32%;}
-.plus-4 {top: 45%; left: 42%; z-index:2;}
+.plus-1 {top: 47%; left: 12%;}
+.plus-2 {top: 42%; left: 24%;}
+.plus-3 {top: 37%; left: 36%;}
+.plus-4 {top: 45%; left: 44%; z-index:2;}
 
 .dropbtn {
     position: absolute;
     background-color: white;
     color: rgb(40, 40, 40);
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     font-size: 30px;
     font-weight: lighter;
     line-height: 0px;
@@ -242,7 +275,6 @@ Dropdown-Bottom-styles
 }
 
 .minus {
-    color: white;
     display: none;
 }
 
@@ -269,31 +301,58 @@ Dropdown-Bottom-styles
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .minus {display: block;}
 .dropdown:hover .plus {display: none;}
-.dropdown:hover .dropbtn {background-color: rgb(180, 180, 180);}
+.dropdown:hover .dropbtn {background-color: whitesmoke;}
 
 /*---------------------------------- 
 article-second-styles
 -----------------------------------*/
-.article-second-container {
+.section-second-container {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.article-50-container .article-50-line {
-    padding: 0;
+.article-50-container{
     width: 50%;
-    margin-top: 60px;
-    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-bottom: 180px;
     float: left;
-    padding: 0 12px;
+    padding: 0px 12px;
     text-align: left;
-    box-sizing: border-box  
+    box-sizing: border-box;  
 }
 
-.article-50-container h1 {
+h1.article-50-container {
     letter-spacing: 1.75px;
     line-height: 1.2;
+}
+
+/*footer grundriss*/
+
+h1.footer-grundriss {
+    letter-spacing: 1.75px;
+    line-height: 1.2;
+}
+
+p.footer-grundriss {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.footer-grundriss-25 {
+    width: 25%;
+    margin-top: 80px;
+    margin-bottom: 180px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.footer-grundriss-25:hover .fotter-grundriss-hover{
+    opacity: 0.4;
+}
+
+.footer-grundriss-25:hover a .footer-grundriss {
+    color: red;
 }
 
 /*---------------------------------- 
@@ -301,6 +360,7 @@ footer styles
 -----------------------------------*/
 
 .footer-container {
+    display: inline-block;
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
@@ -322,13 +382,13 @@ footer styles
     padding-top: 10px;
     padding-left: 6px;
     border-bottom: 1px solid rgb(220, 220, 220);
-    color: rgb(180, 180, 180);
+    color: rgba(0, 0, 0, 0.7);
     font-size: 15px;
-    letter-spacing: 0.75;
+    letter-spacing: 0.6px;
 }
 
 .footer-title {
-    color: rgb(40, 40, 40);
+    color: rgba(0, 0, 0, 1);
 }
 
 .footer-line h4:hover {
@@ -342,30 +402,4 @@ footer styles
         margin-bottom: 20px;
         float: left
     }
-}
-
-/*---------------------------------- 
-a links
------------------------------------*/
-a:link {
-    color: rgb(180, 180, 180);
-    text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-    color: #AAAAAA;
-    text-decoration: none;
-}
-
-/* mouse over link */
-a:hover {
-    color: red;
-    text-decoration: none;
-}
-
-/* selected link */
-a:active {
-    color: darkred;
-    text-decoration: none;
 }
