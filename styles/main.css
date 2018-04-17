@@ -101,13 +101,13 @@ header nav styles
 .pulse {
     vertical-align: middle;
     font-size: 32px;
-    line-height: 0px;
+    line-height: 1px;
     color: red;
     animation: pulsate 2.5s ease-out;
     animation-iteration-count: infinite; 
     opacity: 0.25;
     position: relative;
-    bottom: 1px
+    bottom: 1px;
 }
 
 @-webkit-keyframes pulsate {
