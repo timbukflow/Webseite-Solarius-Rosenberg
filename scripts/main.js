@@ -1,3 +1,6 @@
+/* eslint-env browser */
+
+//Menu by scroll big and small
 var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
@@ -9,7 +12,7 @@ var prevScrollpos = window.pageYOffset;
               prevScrollpos = currentScrollPos;
             }
             
-
+//Responsiv Menu    
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
