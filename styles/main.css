@@ -43,34 +43,6 @@ p {
     -ms-hyphens: manual;
     hyphens: manual;
 }
-/*---------------------------------- 
-a links
------------------------------------*/
-
-a:link {
-    color: rgba(0, 0, 0, 0.7);
-    text-decoration: none;
-}
-
-a:visited {
-    color: rgba(0, 0, 0, 0.7);
-    text-decoration: none;
-}
-
-a:hover {
-    color: red;
-    text-decoration: none;
-}
-
-a:active {
-    color: #ff5c2a;
-    text-decoration: none;
-}
-
-.active-site{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);;
-    padding-bottom: 8px;
-}
 
 /*---------------------------------- 
 header nav styles
@@ -160,7 +132,9 @@ responsive nav styles
 @media screen and (max-width: 930px) {
     .nav-25-left {width: 90%;}
     .nav-75-right {width: 10%}
-    .topnav a {display: none;}
+    .topnav a {
+        display: none;
+    }
     
     .topnav a.icon {
         display: block;
@@ -407,4 +381,33 @@ footer styles
         margin-bottom: 20px;
         float: left
     }
+}
+
+/*---------------------------------- 
+a links
+-----------------------------------*/
+
+a:link {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a:active {
+    color: #ff5c2a;
+    text-decoration: none;
+}
+
+.active-site{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);;
+    padding-bottom: 8px;
 }
