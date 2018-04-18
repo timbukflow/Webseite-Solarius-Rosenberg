@@ -165,15 +165,27 @@ responsive nav styles
 fullscreen imag styles
 -----------------------------------*/
 
-.header-img {
+.header-img-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header-img-defin{
+    position: relative;
+    z-index: 1;
+    top: 80px;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    min-height: 95vh;
-    top: 5vh;
-    position: relative;
-    z-index: 1; 
+    transition: transform 5s;
+    
 }
+
+.header-img-defin:hover {
+    transform: scale(1.1);
+}
+
 
 .header-img-start {background-image: url("../img/solarius-rosenberg-home-header.jpg");}
 .header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
@@ -185,7 +197,7 @@ section-stage-styles
 .section-stage-container {
     z-index: 2;
     position: relative;
-    bottom: 45px;
+    bottom: 100px;
     width: 90%;
     padding-right: 5%;
     float: right
@@ -209,23 +221,29 @@ article-main-styles
     padding-right: 5%;
 }
 
-    .article-main-title {
-        margin-top: 34px;
-    }
+.article-main-title {
+    margin-top: 34px;
+}
 
-    .article-main-p {
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 180px;
-        max-width: 760px;
-        text-align: center;
-    }
+.article-main-p {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 180px;
+    max-width: 760px;
+    text-align: center;
+}
 
-    .article-img-container{ 
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
+.article-img-container, 
+.article-img-container-fix { 
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: transform 1s;
+}
+
+.article-img-container:hover { 
+    transform: scale(1.02);
+}
 
 /*---------------------------------- 
 Dropdown-Bottom-Styles
@@ -332,8 +350,15 @@ p.footer-grundriss {
     padding-top: 20px;
 }
 
+.footer-grundriss-25 img{
+    max-width: 100%; 
+    height: auto;
+    
+}
+
 .footer-grundriss-25 {
     width: 25%;
+    padding: 0px 12px;
     margin-top: 80px;
     margin-bottom: 180px;
     float: left;
