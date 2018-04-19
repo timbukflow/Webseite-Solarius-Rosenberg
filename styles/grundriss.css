@@ -9,45 +9,76 @@ nav-side-container
     top: 121px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 100px;
     box-sizing: border-box;
 }
 
-.top-grundriss {
-    display: inline-block;
-    padding: 13px 7px;
-    font-family: 'Tinos', "Times New Roman", serif;
+p.top-grundriss {
+    text-align: left;
+    padding: 0px 0px 10px 3px;
     font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 
-
-
-
-.plan-container img {
-    padding: 10%;
-    min-width: 80%;
+h1.top-grundriss {
+    padding: 0px;
+    letter-spacing: 1.75px;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
-#accordion section p {
+#navimage {
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.accordion-title {
+    border-bottom: 1px solid rgb(40,40,40);
+    font-size: 20px;
+    
+}
+.accordion-list {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.accordion-list li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(40,40,40);
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    list-style-type: none;
+}
+
+ul li .accordion-list-top {
+    border:none;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#accordion section ul {
     display: none;
 }
 
 #accordion section a {
     text-align: center;
-    color: aqua;
+    color: rgb(40,40,40);
     text-decoration: none;
 }
 
 #accordion section a:hover {
-    text-decoration: underline;  
+    color: red;
 }
 
 /* ---------------------------------------
 target 
 -----------------------------------------*/
 
-#accordion section:target p {
+#accordion section:target ul {
     display: block;
 }
 
@@ -70,4 +101,10 @@ nav-side-container
     background-color: #6c7967;
     box-sizing: border-box;
 }
+
+.plan-container img {
+    padding: 10%;
+    min-width: 80%;
+}
+
 
