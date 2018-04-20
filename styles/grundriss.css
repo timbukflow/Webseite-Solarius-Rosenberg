@@ -1,36 +1,15 @@
 .grundriss-nav-container{
     position: absolute;
-    background-color: aquamarine;
-    bottom: 300px;
+    bottom: 150px;
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.footer-grundriss-25 img{
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-
+.background-grundriss{
+    background-color: whitesmoke;
+    height: 100vh;
 }
-
-.footer-grundriss-25 {
-    width: 25%;
-    padding: 0px;
-    margin-top: 80px;
-    margin-bottom: 180px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.footer-grundriss-25:hover .fotter-grundriss-hover{
-    opacity: 0.4;
-}
-
-.footer-grundriss-25:hover a .footer-grundriss {
-    color: red;
-}
-
 
 .footer-container-grundriss {
     position: absolute;

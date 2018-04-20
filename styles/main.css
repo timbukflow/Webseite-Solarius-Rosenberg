@@ -354,12 +354,12 @@ p.footer-grundriss {
     width: 100%;
     padding: 0px;
     margin: 0px;
-
+    
 }
 
 .footer-grundriss-25 {
     width: 25%;
-    padding: 0px;
+    padding: 0px 12px;
     margin-top: 80px;
     margin-bottom: 180px;
     float: left;
@@ -387,7 +387,6 @@ footer styles
 
 .footer-25 {
     list-style-type: none;
-    padding: 0;
     width: 25%;
     padding: 6px;
     margin-top: 40px;
