@@ -1,24 +1,30 @@
+#nav-container-grundriss {
+    background-color: whitesmoke;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    transition: 0.5s;
+    z-index: 100;
+}
 /* ---------------------------------------
 nav-side-container
 -----------------------------------------*/
 .nav-side-container {
-    width: 30%;
+    width: 35%;
     height: 100vh;
-    background-color: #ebebeb;
+    background-color: white;
     position: fixed;
-    top: 121px;
+    top: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 20px;
+    padding-top: 80px;
+    padding-bottom: 150px;
     box-sizing: border-box;
-}
-
-p.top-grundriss {
-    text-align: left;
-    padding: 0px 0px 10px 3px;
-    font-size: 14px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
 }
 
 h1.top-grundriss {
@@ -27,22 +33,21 @@ h1.top-grundriss {
     line-height: 1.2;
     text-transform: uppercase;
 }
+.next{
+    padding-left: 16px;
+    font-size: 47px;
+}
 
 #navimage {
-    width: 100%;
+    max-width: 100%;
     padding: 30px 0px;
 }
 
 .accordion-title {
-    border-bottom: 1px solid rgb(40,40,40);
-    font-size: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.a, .b{
-    display: inline-block;
-    text-align: right;
+    border-bottom: 1px solid rgba(40, 40, 40, 0.5);
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .accordion-list {
@@ -51,14 +56,32 @@ h1.top-grundriss {
 }
 
 .accordion-list li {
-    padding-bottom: 15px;
-    padding-top: 15px;
-    border-top: 1px solid rgb(40,40,40);
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(40, 40, 40, 0.5);
     color: rgba(0, 0, 0, 0.7);
-    font-size: 18px;
+    font-size: 21px;
     letter-spacing: 0.6px;
     list-style-type: none;
 }
+
+.a {
+    width: 28%;
+    text-align: left;
+    display: inline-block;
+}
+
+.b {
+    width: 72%;
+    display: inline-block;
+    text-align: right;
+}
+
+.download-funktion {
+    position: absolute;
+    bottom: 120px;
+}
+
 
 /* ---------------------------------------
 accordion animation
@@ -69,8 +92,7 @@ accordion animation
 }
 
 #accordion section a {
-    text-align: center;
-    color: rgb(40,40,40);
+    color: rgba(40, 40, 40, 0.2);
     text-decoration: none;
 }
 
@@ -83,32 +105,61 @@ target
 -----------------------------------------*/
 
 #accordion section:target ul {
-    display: block;
+    display: block;   
 }
 
-#accordion section:target a  {
-    color: red;  
+#accordion section:target a {
+    color: red;
 }
 
 /* ---------------------------------------
-nav-side-container
+grundrisse-container
 -----------------------------------------*/
 
 .plan-container {
-    position: fixed;
-    top: 121px;
-    left: 30%;
-    width: 70%;
-    padding-right: 5%;
-    padding-left: 5%;
-    height: 100vh;
-    background-color: #6c7967;
+    position: relative;
+    top: 5vh;
+    left: 35%;
+    width: 65%;
     box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 
 .plan-container img {
-    padding: 10%;
-    min-width: 80%;
+    padding: 10vh 15%;
+    min-height: 75vh;
 }
 
+.plan-container:hover {
+    height: auto;
+    top: 82px;
+    cursor: ns-resize;
+
+}
+
+.plan-container:hover img {
+    width: 100%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.plan-container:hover .zoom-icon{
+    display: none;
+}
+
+.zoom-icon {
+    position: absolute;
+    top: 47%; 
+    left: 50px;
+    background-color: rgb(40,40,40);
+    color: white;
+    width: 36px;
+    height: 36px;
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 0px;
+    padding: 0 0 3px 0;
+    border: none;
+    border-radius: 50%;
+}
 
