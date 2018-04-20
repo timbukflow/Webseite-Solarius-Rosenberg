@@ -351,14 +351,15 @@ p.footer-grundriss {
 }
 
 .footer-grundriss-25 img{
-    max-width: 100%; 
-    height: auto;
-    
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
 }
 
 .footer-grundriss-25 {
     width: 25%;
-    padding: 0px 12px;
+    padding: 0px;
     margin-top: 80px;
     margin-bottom: 180px;
     float: left;

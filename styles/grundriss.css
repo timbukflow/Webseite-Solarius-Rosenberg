@@ -1,3 +1,50 @@
+.grundriss-nav-container{
+    position: absolute;
+    background-color: aquamarine;
+    bottom: 300px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer-grundriss-25 img{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.footer-grundriss-25 {
+    width: 25%;
+    padding: 0px;
+    margin-top: 80px;
+    margin-bottom: 180px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.footer-grundriss-25:hover .fotter-grundriss-hover{
+    opacity: 0.4;
+}
+
+.footer-grundriss-25:hover a .footer-grundriss {
+    color: red;
+}
+
+
+.footer-container-grundriss {
+    position: absolute;
+    bottom: 0px;
+    background-color: whitesmoke;
+    display: inline-block;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/* ---------------------------------------
+hauptnav-side-container
+-----------------------------------------*/
+
 #nav-container-grundriss {
     background-color: whitesmoke;
     width: 90%;
@@ -78,8 +125,7 @@ h1.top-grundriss {
 }
 
 .download-funktion {
-    position: absolute;
-    bottom: 120px;
+    margin-top: 30px;
 }
 
 
@@ -162,4 +208,3 @@ grundrisse-container
     border: none;
     border-radius: 50%;
 }
-
