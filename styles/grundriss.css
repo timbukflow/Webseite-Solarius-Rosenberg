@@ -1,25 +1,46 @@
-.grundriss-nav-container{
+.g-nav-container {
     position: absolute;
-    bottom: 150px;
+    bottom: 300px;
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
+    display: table;
+    table-layout: fixed;
+}
+
+.g-nav-container a {
+    height: 160px;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 25%;
+}
+
+.g-nav-container img {
+    width: 100.5%;
+}
+
+.g-nav-container a:hover img {
+    opacity: 0.4;
+}
+
+.g-nav-container a:hover h1 {
+    color: red;
 }
 
 .background-grundriss{
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
     height: 100vh;
 }
 
 .footer-container-grundriss {
     position: absolute;
     bottom: 0px;
-    background-color: whitesmoke;
     display: inline-block;
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
 }
+
 /* ---------------------------------------
 hauptnav-side-container
 -----------------------------------------*/

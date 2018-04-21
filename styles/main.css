@@ -27,10 +27,6 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
-
-}
-
 p {
     font-size: 19px;
 	line-height: 1.5;
@@ -42,6 +38,11 @@ p {
     -moz-hyphens: manual;
     -ms-hyphens: manual;
     hyphens: manual;
+}
+
+mark {
+    background-color: whitesmoke;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /*---------------------------------- 
@@ -350,30 +351,6 @@ p.footer-grundriss {
     padding-top: 20px;
 }
 
-.footer-grundriss-25 img{
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    
-}
-
-.footer-grundriss-25 {
-    width: 25%;
-    padding: 0px 12px;
-    margin-top: 80px;
-    margin-bottom: 180px;
-    float: left;
-    box-sizing: border-box;
-}
-
-.footer-grundriss-25:hover .fotter-grundriss-hover{
-    opacity: 0.4;
-}
-
-.footer-grundriss-25:hover a .footer-grundriss {
-    color: red;
-}
-
 /*---------------------------------- 
 footer styles
 -----------------------------------*/
@@ -395,7 +372,7 @@ footer styles
     box-sizing: border-box;
 }
 
-.footer-25 h4 {
+.footer-25 li {
     padding-bottom: 8px;
     padding-top: 10px;
     padding-left: 6px;
@@ -409,7 +386,7 @@ footer styles
     color: rgba(0, 0, 0, 1);
 }
 
-.footer-25 h4:hover {
+.footer-25 li:hover {
     color: rgb(40, 40, 40);
 }
 

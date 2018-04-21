@@ -11,5 +11,5 @@
 	<rect x="0.5" y="56.5" fill="none" stroke="#282828" stroke-miterlimit="10" width="138" height="14"/>
 	<rect x="0.5" y="70.5" fill="none" stroke="#282828" stroke-miterlimit="10" width="138" height="14"/>
 </g>
-<rect x="0.5" y="84.5" fill="#E6E6E6" stroke="#282828" stroke-miterlimit="10" width="300" height="14"/>
+<polyline fill="#E6E6E6" stroke="#282828" stroke-miterlimit="10" points="300.5,98.5 0.5,98.5 0.5,84.5 300.5,84.5 "/>
 </svg>
