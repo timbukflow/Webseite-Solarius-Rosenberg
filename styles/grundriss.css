@@ -1,3 +1,7 @@
+/* ---------------------------------------
+grundriss-nav-is-clean
+-----------------------------------------*/
+
 .g-nav-container {
     position: absolute;
     bottom: 300px;
@@ -6,6 +10,7 @@
     padding-right: 5%;
     display: table;
     table-layout: fixed;
+    float: left;
 }
 
 .g-nav-container a {
@@ -35,14 +40,12 @@
 .footer-container-grundriss {
     position: absolute;
     bottom: 0px;
-    display: inline-block;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
 }
 
 /* ---------------------------------------
-hauptnav-side-container
+top-nav-grundriss-is-clean
 -----------------------------------------*/
 
 #nav-container-grundriss {
@@ -58,9 +61,11 @@ hauptnav-side-container
     transition: 0.5s;
     z-index: 100;
 }
+
 /* ---------------------------------------
 nav-side-container
 -----------------------------------------*/
+
 .nav-side-container {
     width: 35%;
     height: 100vh;
@@ -74,12 +79,6 @@ nav-side-container
     box-sizing: border-box;
 }
 
-h1.top-grundriss {
-    padding: 0px;
-    letter-spacing: 1.75px;
-    line-height: 1.2;
-    text-transform: uppercase;
-}
 .next{
     padding-left: 16px;
     font-size: 47px;

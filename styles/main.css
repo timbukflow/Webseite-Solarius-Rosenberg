@@ -13,10 +13,11 @@ h1, h2, h3, h4, p, li, a {
 
 h1 {
     font-size: 34px;
-	letter-spacing: 5px;
+	letter-spacing: 1.75px;
     line-height: 1.2;
 	text-align: left;
     text-transform: uppercase;
+    
 }
 
 h2 {
@@ -41,12 +42,12 @@ p {
 }
 
 mark {
-    background-color: whitesmoke;
+    background-color: none;
     color: rgba(0, 0, 0, 0.8);
 }
 
 /*---------------------------------- 
-header nav styles
+hauptnav-is-clean
 -----------------------------------*/
 #nav-container {
     background-color: whitesmoke;
@@ -62,18 +63,18 @@ header nav styles
     z-index: 100;
 }
 
-.nav-25-left  {
+.nav-left  {
     width: 32%;
 }
 
-.nav-25-left img{
+.nav-left img{
     float: left;   
 }
 
 .solarius-logo {
     padding-left: 16px;
     display: inline-block;
-    letter-spacing: 5;
+    letter-spacing: 5px;
 }
 
 .topnav {
@@ -88,7 +89,6 @@ header nav styles
 .topnav a {
     display: inline-block;
     padding: 13px 7px;
-    font-family: 'Tinos', "Times New Roman", serif;
     font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -123,7 +123,7 @@ header nav styles
 }
 
 /*---------------------------------- 
-responsive nav styles
+responsive-nav-is-clean
 -----------------------------------*/
 
 .open {
@@ -144,8 +144,7 @@ responsive nav styles
 }
 
 @media screen and (max-width: 930px) {
-    .nav-25-left {width: 90%;}
-    .nav-75-right {width: 10%}
+    .nav-left {width: 90%;}
     .topnav a {display: none;}
     .topnav {width: 150px;}
     
@@ -161,9 +160,8 @@ responsive nav styles
     .topnav.responsive .close {display: none;}
 }
 
-
 /*---------------------------------- 
-fullscreen imag styles
+fullscreen-img-transition-fix
 -----------------------------------*/
 
 .header-img-container {
@@ -179,20 +177,18 @@ fullscreen imag styles
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    transition: transform 5s;
-    
+    transition: transform 5s;   
 }
 
 .header-img-defin:hover {
     transform: scale(1.1);
 }
 
-
 .header-img-start {background-image: url("../img/solarius-rosenberg-home-header.jpg");}
 .header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
 
 /*---------------------------------- 
-section-stage-styles
+section-stage-is-clean
 -----------------------------------*/
 
 .section-stage-container {
@@ -201,35 +197,35 @@ section-stage-styles
     bottom: 100px;
     width: 90%;
     padding-right: 5%;
-    float: right
+    float: right;
 }
 
 .section-line-rosenberg h1 {
     text-align: right;
     color: whitesmoke;
+    letter-spacing: 5px;
     text-shadow: 0px 0px 10px rgba(40, 40, 40, 0.5);
 }
 
 /*---------------------------------- 
-article-main-styles
+article-main-is-clean
 -----------------------------------*/
 
 .article-main-container {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 150px;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
 }
 
-.article-main-title {
+.article-main-container h2 {
     margin-top: 34px;
 }
 
 .article-main-p {
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 180px;
+    margin-bottom: 120px;
     max-width: 760px;
     text-align: center;
 }
@@ -247,7 +243,7 @@ article-main-styles
 }
 
 /*---------------------------------- 
-Dropdown-Bottom-Styles
+Dropdown-Bottom-is-clean
 -----------------------------------*/
 
 .dropdown  {
@@ -286,26 +282,24 @@ Dropdown-Bottom-Styles
     left: 22px;
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 220px
+    width: 250px;
 }
 
 .dropdown-content ul {
     list-style-type: none;
     text-align: left;
-    color: black;
     padding: 14px 16px 20px 16px;
     margin: 0;
-    display: block;
 }
 
-.dropdown-line h4 {
+.dropdown-line li {
     padding-bottom: 8px;
     padding-top: 10px;
     padding-left: 6px;
-    border-bottom: 1px solid rgb(220, 220, 220);
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 15px;
-    letter-spacing: 0.6px;
+    border-bottom: 1px solid rgb(200,200,200);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    letter-spacing: 0.5px;
 }
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -314,15 +308,15 @@ Dropdown-Bottom-Styles
 .dropdown:hover .dropbtn {background-color: whitesmoke;}
 
 /*---------------------------------- 
-article-second-styles
+article-second-is-clean
 -----------------------------------*/
 .section-second-container {
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
 }
 
-.article-50-container{
+.article-50-container h1,
+.article-50-container p {
     width: 50%;
     margin-top: 80px;
     margin-bottom: 180px;
@@ -332,34 +326,57 @@ article-second-styles
     box-sizing: border-box;  
 }
 
-h1.article-50-container {
-    letter-spacing: 1.75px;
-    line-height: 1.2;
-}
-
 /*---------------------------------
-footer grundriss style
+footer-grundriss-is-clean
 ----------------------------------*/
 
-h1.footer-grundriss {
-    letter-spacing: 1.75px;
-    line-height: 1.2;
+.footer-grundriss {
+    width: 50%;
+    float: left;
+    margin-top: 80px;
+    margin-bottom: 120px;
 }
 
-p.footer-grundriss {
+.footer-grundriss p {
     text-align: left;
     padding-top: 20px;
 }
 
+.f-g-nav-container {
+    width: 25%;
+    float: left;
+    margin-top: 80px;
+    box-sizing: border-box;
+}
+
+.f-g-nav-container .l {
+    padding-left: 12px;
+    box-sizing: border-box;}
+
+.f-g-nav-container .r {
+    padding-right: 12px;
+    box-sizing: border-box;}
+
+.f-g-nav-container img {
+    max-width: 100.5%;
+}
+
+.f-g-nav-container a:hover img {
+    opacity: 0.4;
+}
+
+.f-g-nav-container a:hover h1 {
+    color: red;
+}
+
 /*---------------------------------- 
-footer styles
+footer-is-clean
 -----------------------------------*/
 
 .footer-container {
-    display: inline-block;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
+    display: inline-block;
 }
 
 .footer-25 {
@@ -373,43 +390,36 @@ footer styles
 }
 
 .footer-25 li {
-    padding-bottom: 8px;
-    padding-top: 10px;
-    padding-left: 6px;
-    border-bottom: 1px solid rgb(220, 220, 220);
-    color: rgba(0, 0, 0, 0.7);
+    padding: 10px 6px 8px 6px;
+    border-bottom: 1px solid rgb(200,200,200);
+    color: rgba(0, 0, 0, 0.5);
     font-size: 15px;
     letter-spacing: 0.6px;
 }
 
 .footer-title {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 0.8);
 }
 
-.footer-25 li:hover {
-    color: rgb(40, 40, 40);
-}
-
-@media only screen and (max-width: 1040px) {
+@media screen and (max-width: 1070px) {
     .footer-25 {
-        width: 48%;
-        margin: 0 1%;
+        width: 50%;
         margin-bottom: 20px;
-        float: left
+        margin-top: 0px;
     }
 }
 
 /*---------------------------------- 
-a links
+a-is-clean
 -----------------------------------*/
 
 a:link {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
