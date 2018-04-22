@@ -68,13 +68,12 @@ nav-side-container
 
 .nav-side-container {
     width: 35%;
-    height: 100vh;
     background-color: white;
     position: fixed;
-    top: 80px;
+    top: 82px;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 150px;
     box-sizing: border-box;
 }
@@ -102,8 +101,8 @@ nav-side-container
 }
 
 .accordion-list li {
-    padding-bottom: 12px;
-    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border-top: 1px solid rgba(40, 40, 40, 0.5);
     color: rgba(0, 0, 0, 0.7);
     font-size: 21px;
@@ -163,39 +162,25 @@ grundrisse-container
 
 .plan-container {
     position: relative;
-    top: 5vh;
+    top: 82px;
     left: 35%;
     width: 65%;
     box-sizing: border-box;
     background-color: #f8f8f8;
+    cursor: ns-resize;
 }
 
 .plan-container img {
-    padding: 10vh 15%;
-    min-height: 75vh;
-}
-
-.plan-container:hover {
-    height: auto;
-    top: 82px;
-    cursor: ns-resize;
-
-}
-
-.plan-container:hover img {
     width: 100%;
-    padding: 80px;
+    padding: 80px 150px;
     box-sizing: border-box;
 }
 
-.plan-container:hover .zoom-icon{
-    display: none;
-}
-
+/*
 .zoom-icon {
-    position: absolute;
-    top: 47%; 
-    left: 50px;
+    position: fixed;
+    bottom: 40px; 
+    right: 40px;
     background-color: rgb(40,40,40);
     color: white;
     width: 36px;
@@ -203,7 +188,8 @@ grundrisse-container
     font-size: 30px;
     font-weight: lighter;
     line-height: 0px;
-    padding: 0 0 3px 0;
+    padding: 0 0 5px 0;
     border: none;
     border-radius: 50%;
 }
+*/
