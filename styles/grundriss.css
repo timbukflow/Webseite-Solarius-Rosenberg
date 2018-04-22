@@ -70,8 +70,7 @@ nav-side-container
     width: 35%;
     height: 100vh;
     background-color: white;
-    position: relative;
-    float: left;
+    position: fixed;
     top: 80px;
     padding-left: 5%;
     padding-right: 5%;
@@ -164,8 +163,8 @@ grundrisse-container
 
 .plan-container {
     position: relative;
-    float: left;
     top: 5vh;
+    left: 35%;
     width: 65%;
     box-sizing: border-box;
     background-color: #f8f8f8;
