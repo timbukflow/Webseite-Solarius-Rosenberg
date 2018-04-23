@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+#contantfadein{
+    display:none;
+}
+
 h1, h2, h3, h4, p, li, a {
     margin: 0;
     padding: 0;
@@ -88,7 +92,7 @@ hauptnav-is-clean
 
 .topnav a {
     display: inline-block;
-    padding: 13px 7px;
+    padding: 14px 0px 14px 14px;
     font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -126,40 +130,40 @@ hauptnav-is-clean
 responsive-nav-is-clean
 -----------------------------------*/
 
-.open {
+a.close {
     display: none;
     color: rgba(0, 0, 0, 0.6);
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
-    bottom: 10px;
+    padding-top: 8px;
     left: 3px;
 }
 
-.open:hover {
+a.close:hover {
     color: rgba(255, 0, 0, 0.8); 
 }
 
-.topnav .icon {
+.topnav .menu {
   display: none;
 }
 
 @media screen and (max-width: 930px) {
     .nav-left {width: 90%;}
-    .topnav a {display: none;}
+    .topnav .navresp {display: none;}
     .topnav {width: 150px;}
     
-    .topnav .icon {
+    .topnav .menu {
         display: block;
-        padding: 13px 7px; 
+        padding: 13px 0px; 
     }
 }
-
+/*
 @media screen and (max-width: 930px) {
     .topnav.responsive a {display: block;}
     .topnav.responsive .open {display: block;}
     .topnav.responsive .close {display: none;}
 }
-
+*/
 /*---------------------------------- 
 fullscreen-img-transition-fix
 -----------------------------------*/

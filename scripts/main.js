@@ -1,4 +1,15 @@
-/* eslint-env browser */
+$(document).ready(function(){
+    $(".menu").click(function(){
+        $(".menu").css("display", "none");
+        $(".topnav .navresp").css("display", "block");
+        $(".close").css("display", "block");
+    });
+    $(".close").click(function(){
+        $(".menu").css("display", "block");
+        $(".topnav .navresp").css("display", "none");
+        $(".close").css("display", "none");
+    });
+});
 
 //Menu by scroll big and small
 var prevScrollpos = window.pageYOffset;
@@ -11,13 +22,3 @@ var prevScrollpos = window.pageYOffset;
               }
               prevScrollpos = currentScrollPos;
             }
-            
-//Responsiv Menu    
-function myFunction() {
-    var x = document.getElementById("Topnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
