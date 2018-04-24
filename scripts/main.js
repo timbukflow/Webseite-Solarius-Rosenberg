@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".menu").click(function () {
         $(".menu").hide();
         $(".topnav .navresp").css("display", "block");
-        $(".close").show();
+        $(".close").css("display", "block");
     });
     $(".close").click(function () {
         $(".menu").show();
