@@ -152,6 +152,12 @@ a.close:hover {
         padding: 13px 0px; 
     }
 }
+@media screen and (min-width: 931px) {
+    .nav-left {width: 32%;}
+    .topnav .navresp {display: inline-block !important;}
+    .topnav .menu {display: none; padding: 13px 0px;}
+    .close {display: none !important;}
+}
 
 /*---------------------------------- 
 fullscreen-img-transition-fix

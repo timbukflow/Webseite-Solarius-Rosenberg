@@ -1,16 +1,4 @@
 $(document).ready(function () {
-
-    $(window).resize(function () {
-    if ($(window).width() < 931) {
-        $(".topnav .navresp").css("display", "none");
-        $(".menu").show();
-        $(".close").hide();
-    } else {
-        $(".topnav .navresp").css("display", "inline-block");
-        $(".close").hide();
-    }
-    });
-
     //Responsive Navigation
     $(".menu").click(function () {
         $(".menu").hide();
@@ -19,7 +7,7 @@ $(document).ready(function () {
     });
     $(".close").click(function () {
         $(".menu").show();
-        $(".topnav .navresp").css("display", "none");
+        $(".topnav .navresp").hide();
         $(".close").hide();
     });
     
