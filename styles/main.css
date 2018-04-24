@@ -53,13 +53,10 @@ mark {
 /*---------------------------------- 
 hauptnav-is-clean
 -----------------------------------*/
-#nav-container {
+#navcontainer {
     background-color: whitesmoke;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 5%;
     position: fixed;
     display: flex;
     align-items: flex-start;
@@ -157,13 +154,7 @@ a.close:hover {
         padding: 13px 0px; 
     }
 }
-/*
-@media screen and (max-width: 930px) {
-    .topnav.responsive a {display: block;}
-    .topnav.responsive .open {display: block;}
-    .topnav.responsive .close {display: none;}
-}
-*/
+
 /*---------------------------------- 
 fullscreen-img-transition-fix
 -----------------------------------*/
@@ -396,7 +387,7 @@ footer-is-clean
 .footer-25 li {
     padding: 10px 6px 8px 6px;
     border-bottom: 1px solid rgb(200,200,200);
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 15px;
     letter-spacing: 0.6px;
 }
@@ -418,12 +409,12 @@ a-is-clean
 -----------------------------------*/
 
 a:link {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
 }
 
