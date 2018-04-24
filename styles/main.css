@@ -147,12 +147,12 @@ a.close:hover {
 @media screen and (max-width: 930px) {
     .nav-left {width: 90%;}
     .topnav .navresp {display: none;}
-    
     .topnav .menu {
         display: block;
         padding: 13px 0px; 
     }
 }
+
 /*---------------------------------- 
 fullscreen-img-transition-fix
 -----------------------------------*/

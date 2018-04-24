@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     $(window).resize(function () {
     if ($(window).width() < 931) {
         $(".topnav .navresp").css("display", "none");
@@ -10,7 +10,7 @@ $(document).ready(function () {
         $(".close").hide();
     }
     });
-    
+
     //Responsive Navigation
     $(".menu").click(function () {
         $(".menu").hide();
