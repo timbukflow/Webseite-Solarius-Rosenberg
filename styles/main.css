@@ -7,7 +7,7 @@ body {
     display:none;
 }
 
-h1, h2, h3, h4, p, li, a {
+h1, h2, h3, h4, p, li, a, th, td {
     margin: 0;
     padding: 0;
     font-family: "Tinos", "Times New Roman", serif;
@@ -147,14 +147,12 @@ a.close:hover {
 @media screen and (max-width: 930px) {
     .nav-left {width: 90%;}
     .topnav .navresp {display: none;}
-    .topnav {width: 150px;}
     
     .topnav .menu {
         display: block;
         padding: 13px 0px; 
     }
 }
-
 /*---------------------------------- 
 fullscreen-img-transition-fix
 -----------------------------------*/
@@ -181,7 +179,8 @@ fullscreen-img-transition-fix
 
 .header-img-start {background-image: url("../img/solarius-rosenberg-home-header.jpg");}
 .header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
-
+.header-img-miete {background-image: url("../img/solarius-rosenberg-miete-header.jpg");}
+.header-img-lage {background-image: url("../img/solarius-rosenberg-lage-stgallen-saentis.jpg");}
 /*---------------------------------- 
 section-stage-is-clean
 -----------------------------------*/
@@ -249,6 +248,9 @@ Dropdown-Bottom-is-clean
 .plus-2 {top: 42%; left: 24%;}
 .plus-3 {top: 37%; left: 36%;}
 .plus-4 {top: 45%; left: 44%; z-index:2;}
+.plus-5 {top: 30%; left: 10%;}
+.plus-6 {top: 36%; left: 60%;}
+.plus-7 {top: 45%; left: 44%; z-index:2;}
 
 .dropbtn {
     position: absolute;
@@ -269,7 +271,7 @@ Dropdown-Bottom-is-clean
     display: none;
 }
 
-.dropdown-content {
+.table-content{
     display: none;
     position: absolute;
     z-index: 3;
@@ -277,27 +279,26 @@ Dropdown-Bottom-is-clean
     left: 22px;
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 250px;
+    width: 300px;
+    padding: 20px;  
 }
 
-.dropdown-content ul {
-    list-style-type: none;
-    text-align: left;
-    padding: 14px 16px 20px 16px;
-    margin: 0;
+.table-content table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.dropdown-line li {
-    padding-bottom: 8px;
-    padding-top: 10px;
-    padding-left: 6px;
+th, td {
     border-bottom: 1px solid rgb(200,200,200);
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 18px;
-    letter-spacing: 0.5px;
+    padding: 8px 6px;
+    text-align: left;  
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+td:first-child {
+    width: 60px;
+}
+
+.dropdown:hover .table-content {display: block;}
 .dropdown:hover .minus {display: block;}
 .dropdown:hover .plus {display: none;}
 .dropdown:hover .dropbtn {background-color: whitesmoke;}
