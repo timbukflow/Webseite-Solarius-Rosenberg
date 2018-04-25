@@ -1,0 +1,196 @@
+/* ---------------------------------------
+grundriss-nav-is-clean
+-----------------------------------------*/
+
+.g-nav-container {
+    position: absolute;
+    bottom: 300px;
+    width: 90%;
+    margin: 0px 5%;
+    padding: 0px 6px;
+    display: table;
+    table-layout: fixed;
+    float: left;
+    box-sizing: border-box;
+}
+
+.g-nav-container a {
+    height: 160px;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 25%;
+}
+
+.g-nav-container img {
+    width: 100.5%;
+}
+
+.g-nav-container a:hover img {
+    opacity: 0.4;
+}
+
+.g-nav-container a:hover h1 {
+    color: red;
+}
+
+.background-grundriss{
+    background-color: rgb(245, 245, 245);
+    height: 100vh;
+}
+
+.footer-container-grundriss {
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    padding: 0 5%;
+}
+
+/* ---------------------------------------
+top-nav-grundriss-is-clean
+-----------------------------------------*/
+
+#nav-container-grundriss {
+    background-color: whitesmoke;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+/* ---------------------------------------
+nav-side-container
+-----------------------------------------*/
+
+.nav-side-container {
+    width: 35%;
+    background-color: white;
+    position: fixed;
+    top: 82px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+}
+
+.next{
+    padding-left: 16px;
+    font-size: 47px;
+}
+
+#navimage {
+    max-width: 100%;
+    padding: 30px 0px;
+}
+
+.accordion-title {
+    border-bottom: 1px solid rgba(40, 40, 40, 0.5);
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.accordion-list {
+    margin: 10px 0px -15px 0px;
+    padding: 0px;
+}
+
+.accordion-list li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(40, 40, 40, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 21px;
+    letter-spacing: 0.6px;
+    list-style-type: none;
+}
+
+.a {
+    width: 28%;
+    text-align: left;
+    display: inline-block;
+}
+
+.b {
+    width: 72%;
+    display: inline-block;
+    text-align: right;
+}
+
+.download-funktion {
+    margin-top: 30px;
+}
+
+
+/* ---------------------------------------
+accordion animation
+-----------------------------------------*/
+
+#accordion section ul {
+    display: none;
+}
+
+#accordion section a {
+    color: rgba(40, 40, 40, 0.2);
+    text-decoration: none;
+}
+
+#accordion section a:hover {
+    color: red;
+}
+
+/* ---------------------------------------
+target 
+-----------------------------------------*/
+
+#accordion section:target ul {
+    display: block;   
+}
+
+#accordion section:target a {
+    color: red;
+}
+
+/* ---------------------------------------
+grundrisse-container
+-----------------------------------------*/
+
+.plan-container {
+    position: relative;
+    top: 82px;
+    left: 35%;
+    width: 65%;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    cursor: ns-resize;
+}
+
+.plan-container img {
+    width: 100%;
+    padding: 80px 150px;
+    box-sizing: border-box;
+}
+
+/*
+.zoom-icon {
+    position: fixed;
+    bottom: 40px; 
+    right: 40px;
+    background-color: rgb(40,40,40);
+    color: white;
+    width: 36px;
+    height: 36px;
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 0px;
+    padding: 0 0 5px 0;
+    border: none;
+    border-radius: 50%;
+}
+*/

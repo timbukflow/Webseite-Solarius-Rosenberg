@@ -1,20 +1,22 @@
-var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
-                  document.getElementById("nav-container").style.padding = "40px 5% 40px 5%";
-              } else {
-                  document.getElementById("nav-container").style.padding = "20px 5% 20px 5%";
-              }
-              prevScrollpos = currentScrollPos;
-            }
-            
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+$(document).ready(function () {
+    //Responsive Navigation
+    $(".menu").click(function () {
+        $(".menu").hide();
+        $(".topnav .navresp").css("display", "block");
+        $(".close").css("display", "block");
+    });
+    $(".close").click(function () {
+        $(".menu").show();
+        $(".topnav .navresp").hide();
+        $(".close").hide();
+    });
+    
+   //Sroll resizing Navigation
+    $(document).on("scroll", function () {
+    if ($(document).scrollTop() > 20) {
+        $("#navcontainer").css("padding", "20px 5%"); 
     } else {
-        x.className = "topnav";
-    }
-}
+        $("#navcontainer").css("padding", "40px 5%"); }
+    });
+    
+});

@@ -3,7 +3,11 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4, p {
+#contantfadein{
+    display:none;
+}
+
+h1, h2, h3, h4, p, li, a, th, td {
     margin: 0;
     padding: 0;
     font-family: "Tinos", "Times New Roman", serif;
@@ -13,10 +17,11 @@ h1, h2, h3, h4, p {
 
 h1 {
     font-size: 34px;
-	letter-spacing: 5px;
+	letter-spacing: 1.75px;
     line-height: 1.2;
 	text-align: left;
     text-transform: uppercase;
+    
 }
 
 h2 {
@@ -27,16 +32,12 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
-
-}
-
 p {
     font-size: 19px;
 	line-height: 1.5;
 	letter-spacing: 0.5px;
 	text-align: center;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.8);
     
     -webkit-hyphens: manual;
     -moz-hyphens: manual;
@@ -44,50 +45,47 @@ p {
     hyphens: manual;
 }
 
+mark {
+    background-color: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
 /*---------------------------------- 
-header nav styles
+hauptnav-is-clean
 -----------------------------------*/
-#nav-container {
+#navcontainer {
     background-color: whitesmoke;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 5%;
     position: fixed;
-    display: flex;
-    align-items: flex-start;
     transition: 0.5s;
     z-index: 100;
 }
 
-.nav-25-left  {
+.nav-left  {
     width: 32%;
 }
 
-.nav-25-left img{
+.nav-left img{
     float: left;   
 }
 
 .solarius-logo {
     padding-left: 16px;
     display: inline-block;
-    letter-spacing: 5;
+    letter-spacing: 5px;
 }
 
 .topnav {
     list-style-type: none;
-    width: 68%;
-    padding: 0;
-    margin: 0; 
     text-align: right;
     cursor: pointer;
+    float: right;
 }
 
 .topnav a {
     display: inline-block;
-    padding: 13px 7px;
-    font-family: 'Tinos', "Times New Roman", serif;
+    padding: 14px 0px 14px 14px;
     font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -122,101 +120,175 @@ header nav styles
 }
 
 /*---------------------------------- 
-responsive nav styles
+responsive-nav-is-clean
 -----------------------------------*/
 
-.topnav .icon {
+.topnav .close {
+    display: none;
+    padding-top: 10px;
+}
+
+.topnav .close:hover {
+    color: rgba(255, 0, 0, 0.8); 
+}
+
+.topnav .menu {
   display: none;
 }
 
 @media screen and (max-width: 930px) {
-    .nav-25-left {width: 90%;}
-    .nav-75-right {width: 10%}
-    .topnav a {
-        display: none;
-    }
-    
-    .topnav a.icon {
+    .nav-left {width: 90%;}
+    .topnav .navresp {display: none; padding: 16px 0px;}
+    .topnav .menu {
         display: block;
-        padding: 10px 10px; 
+        padding: 13px 0px; 
     }
 }
-
-@media screen and (max-width: 930px) {
-  .topnav.responsive a {
-    display: block;
-  }
+@media screen and (min-width: 931px) {
+    .nav-left {width: 32%;}
+    .topnav .navresp {display: inline-block !important;}
+    .topnav .menu {display: none;}
+    .close {display: none !important;}
 }
-
 
 /*---------------------------------- 
-fullscreen imag styles
+fullscreen-img-transition-fix
 -----------------------------------*/
 
-.header-img {
+.header-img-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header-img-defin{
+    position: relative;
+    z-index: 1;
+    top: 80px;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    min-height: 95vh;
-    top: 5vh;
-    position: relative;
-    z-index: 1; 
+    transition: transform 5s;   
+}
+
+.header-img-defin:hover {
+    transform: scale(1.1);
 }
 
 .header-img-start {background-image: url("../img/solarius-rosenberg-home-header.jpg");}
 .header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
-
+.header-img-miete {background-image: url("../img/solarius-rosenberg-miete-header.jpg");}
+.header-img-lage {background-image: url("../img/solarius-rosenberg-lage-stgallen-saentis.jpg");}
 /*---------------------------------- 
-section-stage-styles
+section-stage-is-clean
 -----------------------------------*/
 
 .section-stage-container {
     z-index: 2;
     position: relative;
-    bottom: 45px;
+    bottom: 100px;
     width: 90%;
-    padding-right: 5%;
-    float: right
+    margin: 0px 5%;
+    float: right;
 }
 
-.section-line-rosenberg h1 {
+.section-stage-container h1 {
     text-align: right;
     color: whitesmoke;
+    letter-spacing: 5px;
     text-shadow: 0px 0px 10px rgba(40, 40, 40, 0.5);
 }
 
 /*---------------------------------- 
-article-main-styles
+icon-scroll
+-----------------------------------*/
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+    z-index: 3
+}
+
+.icon-scroll {
+  width: 36px;
+  height: 50px;
+  margin-left: -19px;
+  bottom: 50px;
+  margin-top: -30px;
+  box-shadow: inset 0 0 0 2px whitesmoke;
+}
+
+.icon-scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: whitesmoke;
+  margin-left: -4px;
+  top: 10px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {opacity: 1;}
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+
+@keyframes scroll {
+  0% {opacity: 1;}
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+
+/*---------------------------------- 
+article-main-is-clean
 -----------------------------------*/
 
 .article-main-container {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 150px;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
 }
 
-    .article-main-title {
-        margin-top: 34px;
-    }
+.article-main-container h2 {
+    margin-top: 34px;
+}
 
-    .article-main-p {
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 180px;
-        max-width: 760px;
-        text-align: center;
-    }
+.article-main-p {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    max-width: 760px;
+    text-align: center;
+}
 
-    .article-img-container{ 
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
+.article-img-container, 
+.article-img-container-fix { 
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: transform 1s;
+}
+
+.article-img-container:hover { 
+    transform: scale(1.02);
+}
 
 /*---------------------------------- 
-Dropdown-Bottom-Styles
+Dropdown-Bottom-is-clean
 -----------------------------------*/
 
 .dropdown  {
@@ -227,6 +299,9 @@ Dropdown-Bottom-Styles
 .plus-2 {top: 42%; left: 24%;}
 .plus-3 {top: 37%; left: 36%;}
 .plus-4 {top: 45%; left: 44%; z-index:2;}
+.plus-5 {top: 30%; left: 10%;}
+.plus-6 {top: 36%; left: 60%;}
+.plus-7 {top: 45%; left: 44%; z-index:2;}
 
 .dropbtn {
     position: absolute;
@@ -247,7 +322,7 @@ Dropdown-Bottom-Styles
     display: none;
 }
 
-.dropdown-content {
+.table-content{
     display: none;
     position: absolute;
     z-index: 3;
@@ -255,43 +330,40 @@ Dropdown-Bottom-Styles
     left: 22px;
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 220px
+    width: 300px;
+    padding: 20px;  
 }
 
-.dropdown-content ul {
-    list-style-type: none;
-    text-align: left;
-    color: black;
-    padding: 14px 16px 20px 16px;
-    margin: 0;
-    display: block;
+.table-content table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.dropdown-line h4 {
-    padding-bottom: 8px;
-    padding-top: 10px;
-    padding-left: 6px;
-    border-bottom: 1px solid rgb(220, 220, 220);
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 15px;
-    letter-spacing: 0.6px;
+th, td {
+    border-bottom: 1px solid rgb(200,200,200);
+    padding: 8px 6px;
+    text-align: left;  
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+td:first-child {
+    width: 60px;
+}
+
+.dropdown:hover .table-content {display: block;}
 .dropdown:hover .minus {display: block;}
 .dropdown:hover .plus {display: none;}
 .dropdown:hover .dropbtn {background-color: whitesmoke;}
 
 /*---------------------------------- 
-article-second-styles
+article-second-is-clean
 -----------------------------------*/
 .section-second-container {
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
 }
 
-.article-50-container{
+.article-50-container h1,
+.article-50-container p {
     width: 50%;
     margin-top: 80px;
     margin-bottom: 180px;
@@ -301,53 +373,61 @@ article-second-styles
     box-sizing: border-box;  
 }
 
-h1.article-50-container {
-    letter-spacing: 1.75px;
-    line-height: 1.2;
+/*---------------------------------
+footer-grundriss-is-clean
+----------------------------------*/
+
+.footer-grundriss {
+    width: 50%;
+    float: left;
+    margin-top: 80px;
+    margin-bottom: 120px;
 }
 
-/*footer grundriss*/
-
-h1.footer-grundriss {
-    letter-spacing: 1.75px;
-    line-height: 1.2;
-}
-
-p.footer-grundriss {
+.footer-grundriss p {
     text-align: left;
     padding-top: 20px;
 }
 
-.footer-grundriss-25 {
+.f-g-nav-container {
     width: 25%;
-    margin-top: 80px;
-    margin-bottom: 180px;
     float: left;
+    margin-top: 80px;
     box-sizing: border-box;
 }
 
-.footer-grundriss-25:hover .fotter-grundriss-hover{
+.f-g-nav-container .l {
+    padding-left: 12px;
+    box-sizing: border-box;}
+
+.f-g-nav-container .r {
+    padding-right: 12px;
+    box-sizing: border-box;}
+
+.f-g-nav-container img {
+    max-width: 100.5%;
+}
+
+.f-g-nav-container a:hover img {
     opacity: 0.4;
 }
 
-.footer-grundriss-25:hover a .footer-grundriss {
+.f-g-nav-container a:hover h1 {
     color: red;
 }
 
 /*---------------------------------- 
-footer styles
+footer-is-clean
 -----------------------------------*/
 
 .footer-container {
-    display: inline-block;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
+    display: inline-block;
 }
 
 .footer-25 {
     list-style-type: none;
-    padding: 0;
     width: 25%;
     padding: 6px;
     margin-top: 40px;
@@ -356,58 +436,51 @@ footer styles
     box-sizing: border-box;
 }
 
-.footer-25 h4 {
-    padding-bottom: 8px;
-    padding-top: 10px;
-    padding-left: 6px;
-    border-bottom: 1px solid rgb(220, 220, 220);
-    color: rgba(0, 0, 0, 0.7);
+.footer-25 li {
+    padding: 10px 6px 8px 6px;
+    border-bottom: 1px solid rgb(200,200,200);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 15px;
     letter-spacing: 0.6px;
 }
 
 .footer-title {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 0.8);
 }
 
-.footer-25 h4:hover {
-    color: rgb(40, 40, 40);
-}
-
-@media only screen and (max-width: 1040px) {
+@media screen and (max-width: 1070px) {
     .footer-25 {
-        width: 48%;
-        margin: 0 1%;
+        width: 50%;
         margin-bottom: 20px;
-        float: left
+        margin-top: 0px;
     }
 }
 
 /*---------------------------------- 
-a links
+a-is-clean
 -----------------------------------*/
 
 a:link {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
 }
 
 a:hover {
     color: red;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 a:active {
-    color: #ff5c2a;
+    color: rgba(255, 0, 0, 0.3);
     text-decoration: none;
 }
 
-.active-site{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);;
-    padding-bottom: 8px;
+.active_site{
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
 }
