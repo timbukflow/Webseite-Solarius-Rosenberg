@@ -6,11 +6,12 @@ grundriss-nav-is-clean
     position: absolute;
     bottom: 300px;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin: 0px 5%;
+    padding: 0px 6px;
     display: table;
     table-layout: fixed;
     float: left;
+    box-sizing: border-box;
 }
 
 .g-nav-container a {
