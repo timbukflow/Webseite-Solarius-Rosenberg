@@ -185,8 +185,8 @@ section-stage-is-clean
 
 .section-stage-container {
     z-index: 2;
-    position: relative;
-    bottom: 100px;
+    position: absolute;
+    bottom: 50px;
     width: 90%;
     margin: 0px 5%;
     float: right;
@@ -263,8 +263,8 @@ icon-scroll
 
 .icon-scroll,
 .icon-scroll:before {
-  position: absolute;
-  left: 50%;
+    position: absolute;
+    left: 50%;
     z-index: 3
 }
 
