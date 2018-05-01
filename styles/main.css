@@ -176,7 +176,7 @@ fullscreen-img-transition-fix
 
 .header-img-start {background-image: url("../img/solarius-rosenberg-home-header.jpg");}
 .header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
-.header-img-miete {background-image: url("../img/solarius-rosenberg-miete-header.jpg");}
+.header-img-miete {background-image: url("../img/solarius-rosenberg-miete-kueche.jpg");}
 .header-img-lage {background-image: url("../img/solarius-rosenberg-lage-stgallen-saentis.jpg");}
 /*---------------------------------- 
 section-stage-is-clean
@@ -352,10 +352,10 @@ Dropdown-Bottom-is-clean
     position: absolute;
 }
 
-.plus-1 {top: 47%; left: 12%;}
-.plus-2 {top: 42%; left: 24%;}
-.plus-3 {top: 37%; left: 36%;}
-.plus-4 {top: 45%; left: 44%; z-index:2;}
+.plus-1 {top: 45%; left: 12%;}
+.plus-2 {top: 40%; left: 24%;}
+.plus-3 {top: 35%; left: 36%;}
+.plus-4 {top: 43%; left: 44%; z-index:2;}
 .plus-5 {top: 30%; left: 10%;}
 .plus-6 {top: 36%; left: 60%;}
 .plus-7 {top: 45%; left: 44%; z-index:2;}
@@ -366,7 +366,7 @@ Dropdown-Bottom-is-clean
     color: rgb(40, 40, 40);
     width: 36px;
     height: 36px;
-    font-size: 30px;
+    font-size: 29px;
     font-weight: lighter;
     line-height: 0px;
     border: none;
@@ -440,6 +440,8 @@ footer-grundriss-is-clean
     float: left;
     margin-top: 80px;
     margin-bottom: 120px;
+    padding: 0px 30px 0px 12px;
+    box-sizing: border-box;  
 }
 
 .footer-grundriss p {
@@ -542,3 +544,50 @@ a:active {
     border-bottom: 1px solid red;
     padding-bottom: 5px;
 }
+
+/*---------------------------------- 
+a-is-clean
+-----------------------------------*/
+
+@media screen and (max-width: 1025px) {
+    .footer-grundriss {
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .f-g-nav-container {
+        width: 50%;
+        margin-top: 0px;
+        margin-bottom: 80px
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .article-main-container{
+        width: 100%;
+        padding: 0;
+        margin-top: 100px
+    }
+    .article-main-p{
+        padding: 0px 40px;
+    }
+    .plus-1 {top: 43%; left: 12%;}
+    .plus-2 {top: 38%; left: 24%;}
+    .plus-3 {top: 33%; left: 36%;}
+    .plus-4 {top: 41%; left: 44%; z-index:2;}
+    .dropbtn {
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+    }
+    .article-50-container h2,
+    .article-50-container p {
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .article-50-container p {
+        margin-top: 0px;
+    }
+}
+    
