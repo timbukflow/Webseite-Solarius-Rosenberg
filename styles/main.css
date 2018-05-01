@@ -379,7 +379,9 @@ Dropdown-Bottom-is-clean
 }
 
 .table-content{
-    display: none;
+    visibility:hidden;
+    opacity:0;
+    transition: opacity 1s;
     position: absolute;
     z-index: 3;
     top: 22px;
@@ -387,7 +389,7 @@ Dropdown-Bottom-is-clean
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 300px;
-    padding: 20px;  
+    padding: 20px;
 }
 
 .table-content table {
@@ -404,12 +406,12 @@ th, td {
 td:first-child {
     width: 60px;
 }
-/*
-.dropdown:hover .table-content {display: block;}
+
+.dropdown:hover .table-content {visibility:visible; opacity:1;}
 .dropdown:hover .minus {display: block;}
 .dropdown:hover .plus {display: none;}
 .dropdown:hover .dropbtn {background-color: whitesmoke;}
-*/
+
 /*---------------------------------- 
 article-second-is-clean
 -----------------------------------*/
