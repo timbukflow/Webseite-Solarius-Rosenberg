@@ -37,11 +37,10 @@ p {
 	letter-spacing: 0.5px;
 	text-align: center;
     color: rgba(0, 0, 0, 0.8);
-    
-    -webkit-hyphens: manual;
-    -moz-hyphens: manual;
-    -ms-hyphens: manual;
-    hyphens: manual;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 mark {
@@ -329,7 +328,7 @@ article-main-is-clean
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 120px;
-    max-width: 760px;
+    max-width: 770px;
     text-align: center;
 }
 
@@ -370,7 +369,6 @@ Dropdown-Bottom-is-clean
     font-size: 30px;
     font-weight: lighter;
     line-height: 0px;
-    padding: 0 0 3px 0;
     border: none;
     border-radius: 50%;
     z-index: 4; 
@@ -406,12 +404,12 @@ th, td {
 td:first-child {
     width: 60px;
 }
-
+/*
 .dropdown:hover .table-content {display: block;}
 .dropdown:hover .minus {display: block;}
 .dropdown:hover .plus {display: none;}
 .dropdown:hover .dropbtn {background-color: whitesmoke;}
-
+*/
 /*---------------------------------- 
 article-second-is-clean
 -----------------------------------*/
