@@ -52,13 +52,8 @@ top-nav-grundriss-is-clean
 #nav-container-grundriss {
     background-color: whitesmoke;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 5%;
     position: fixed;
-    display: flex;
-    align-items: flex-start;
     transition: 0.5s;
     z-index: 100;
 }
