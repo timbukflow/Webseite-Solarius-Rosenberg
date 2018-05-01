@@ -16,19 +16,18 @@ h1, h2, h3, h4, p, li, a, th, td, button {
 }
 
 h1 {
-    font-size: 34px;
-	letter-spacing: 1.75px;
-    line-height: 1.2;
-	text-align: left;
-    text-transform: uppercase;
-    
-}
-
-h2 {
     font-size: 46px;
     line-height: 1.2;
 	letter-spacing: 4px;
 	text-align: center;
+    text-transform: uppercase; 
+}
+
+h2 {
+    font-size: 34px;
+	letter-spacing: 1.75px;
+    line-height: 1.2;
+	text-align: left;
     text-transform: uppercase;
 }
 
@@ -193,7 +192,7 @@ section-stage-is-clean
     float: right;
 }
 
-.section-stage-container h1 {
+.section-stage-container h2 {
     text-align: right;
     color: whitesmoke;
     letter-spacing: 5px;
@@ -322,7 +321,7 @@ article-main-is-clean
     padding: 0 5%;
 }
 
-.article-main-container h2 {
+.article-main-container h1 {
     margin-top: 34px;
 }
 
@@ -421,7 +420,7 @@ article-second-is-clean
     padding: 0 5%;
 }
 
-.article-50-container h1,
+.article-50-container h2,
 .article-50-container p {
     width: 50%;
     margin-top: 80px;
@@ -471,7 +470,7 @@ footer-grundriss-is-clean
     opacity: 0.4;
 }
 
-.f-g-nav-container a:hover h1 {
+.f-g-nav-container a:hover h2 {
     color: red;
 }
 

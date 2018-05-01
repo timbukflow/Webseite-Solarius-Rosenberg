@@ -29,7 +29,7 @@ grundriss-nav-is-clean
     opacity: 0.4;
 }
 
-.g-nav-container a:hover h1 {
+.g-nav-container a:hover h2 {
     color: red;
 }
 
