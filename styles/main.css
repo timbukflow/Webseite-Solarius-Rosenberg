@@ -546,12 +546,12 @@ a:active {
 }
 
 /*---------------------------------- 
-a-is-clean
+Responsive
 -----------------------------------*/
 
 @media screen and (max-width: 1025px) {
     .footer-grundriss {
-        width: 100%;
+        width: 75%;
         margin-top: 80px;
         margin-bottom: 50px;
     }
@@ -563,6 +563,7 @@ a-is-clean
 }
 
 @media screen and (max-width: 760px) {
+    .icon-scroll{display: none;}
     .article-main-container{
         width: 100%;
         padding: 0;
@@ -571,10 +572,15 @@ a-is-clean
     .article-main-p{
         padding: 0px 40px;
     }
+     .table-content {
+        width: 240px;
+    }
     .plus-1 {top: 43%; left: 12%;}
     .plus-2 {top: 38%; left: 24%;}
     .plus-3 {top: 33%; left: 36%;}
     .plus-4 {top: 41%; left: 44%; z-index:2;}
+    .plus-6 {top: 36%; left: 45%;}
+    .plus-7 {top: 45%; left: 30%; z-index:2;}
     .dropbtn {
         width: 30px;
         height: 30px;
@@ -584,10 +590,47 @@ a-is-clean
     .article-50-container p {
         width: 100%;
         margin-top: 80px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .article-50-container p {
         margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   h1 {
+    font-size: 38px;
+	letter-spacing: 3px;
+    padding: 0px 40px;
+    }
+
+    h2 {font-size: 30px;}
+    p {font-size: 17px;}
+
+    .nav-left img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .header-img-defin {background-position: left;}
+    .header-img-defin.header-img-start {background-position: right;}
+    .header-img-defin.header-img-lage {background-position: center;}
+    
+    .section-stage-container {bottom: 20px;}
+    .article-main-p{
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+    .dropbtn {
+        display: none;
+    }
+    
+    .footer-grundriss {
+        width: 100%;
+    }
+    
+    .footer-25 {
+        width: 100%;
     }
 }
     
