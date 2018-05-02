@@ -1,5 +1,8 @@
 $(document).ready(function () {
     
+    //main fade in
+    $('main').css('opacity', '1');
+    
     //Responsive Navigation
     $(".menu").click(function () {
         $(".menu").hide();
@@ -20,6 +23,8 @@ $(document).ready(function () {
         $("#navcontainer").css("padding", "40px 5%"); }
     });
     
+   
+
    //Video player noch auf die richtigen werte anpassen!!!!!
     $("#buttonLive").click(function(){
         $("#webcam1").css("display", "block");
