@@ -17,7 +17,7 @@ $(document).ready(function () {
     
    //Sroll resizing Navigation
     $(document).on("scroll", function () {
-    if ($(document).scrollTop() > 20) {
+    if ($(document).scrollTop() > 10) {
         $("#navcontainer").css("padding", "20px 5%"); 
     } else {
         $("#navcontainer").css("padding", "40px 5%"); }
