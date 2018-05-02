@@ -2,22 +2,22 @@
 grundriss-nav-is-clean
 -----------------------------------------*/
 
+body.background-grundriss {
+    background-color: whitesmoke;
+}
+
 .g-nav-container {
     position: absolute;
-    bottom: 300px;
+    top: 30%;
     width: 90%;
     margin: 0px 5%;
     padding: 0px 6px;
-    display: table;
-    table-layout: fixed;
-    float: left;
     box-sizing: border-box;
 }
 
 .g-nav-container a {
     height: 160px;
-    display: table-cell;
-    vertical-align: bottom;
+    float: left;
     width: 25%;
 }
 
@@ -31,11 +31,6 @@ grundriss-nav-is-clean
 
 .g-nav-container a:hover h2 {
     color: red;
-}
-
-.background-grundriss{
-    background-color: rgb(245, 245, 245);
-    height: 100vh;
 }
 
 .footer-container-grundriss {
@@ -200,3 +195,24 @@ grundriss-responsive
     position: absolute;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .footer-container-grundriss {
+    position: absolute;
+    top: 480px;
+    width: 90%;
+    padding: 0 5%;
+}
+    
+    .g-nav-container {
+    position: absolute;
+    top: 150px;
+    bottom: 0px;
+    }
+    
+    .g-nav-container a {
+    height: 160px;
+    width: 50%;
+}
+}
+    
