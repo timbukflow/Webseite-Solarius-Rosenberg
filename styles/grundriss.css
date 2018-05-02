@@ -172,20 +172,31 @@ grundrisse-container
     box-sizing: border-box;
 }
 
-/*
-.zoom-icon {
-    position: fixed;
-    bottom: 40px; 
-    right: 40px;
-    background-color: rgb(40,40,40);
-    color: white;
-    width: 36px;
-    height: 36px;
-    font-size: 30px;
-    font-weight: lighter;
-    line-height: 0px;
-    padding: 0 0 5px 0;
-    border: none;
-    border-radius: 50%;
+/* ---------------------------------------
+grundriss-responsive
+-----------------------------------------*/
+
+.responsiv-map{
+    display: none;
 }
-*/
+
+@media screen and (max-width: 960px) {
+   .responsiv-map{
+    display: block;
+    width: 100%;
+    padding: 30px 20px 50px 20px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(40, 40, 40, 0.5); 
+    }
+    .plan-container {
+    display: none;
+    }
+    .nav-side-container {
+    width: 100%;
+    position: relative;
+    top: 82px;
+    }
+    #nav-container-grundriss {
+    position: absolute;
+    }
+}

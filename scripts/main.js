@@ -19,7 +19,7 @@ $(document).ready(function () {
     } else {
         $("#navcontainer").css("padding", "40px 5%"); }
     });
-
+    
    //Video player noch auf die richtigen werte anpassen!!!!!
     $("#buttonLive").click(function(){
         $("#webcam1").css("display", "block");
