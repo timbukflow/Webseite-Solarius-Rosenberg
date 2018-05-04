@@ -264,7 +264,7 @@ Live Video
 /*---------------------------------- 
 icon-scroll
 -----------------------------------*/
-
+/*
 .icon-scroll,
 .icon-scroll:before {
     position: absolute;
@@ -273,44 +273,46 @@ icon-scroll
 }
 
 .icon-scroll {
-  width: 36px;
-  height: 50px;
-  margin-left: -19px;
-  bottom: 50px;
-  margin-top: -30px;
-  box-shadow: inset 0 0 0 2px whitesmoke;
+    width: 36px;
+    height: 50px;
+    margin-left: -19px;
+    bottom: 50px;
+    margin-top: -30px;
+    box-shadow: inset 0 0 0 2px whitesmoke;
+    border-radius: 50px;
 }
 
 .icon-scroll:before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: whitesmoke;
-  margin-left: -4px;
-  top: 10px;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: whitesmoke;
+    margin-left: -4px;
+    top: 10px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
 }
 
 @-webkit-keyframes scroll {
-  0% {opacity: 1;}
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    0% {opacity: 1;}
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
   }
 }
 
 @keyframes scroll {
-  0% {opacity: 1;}
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    0% {opacity: 1;}
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
   }
 }
 
