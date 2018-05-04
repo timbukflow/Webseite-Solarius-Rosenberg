@@ -24,15 +24,13 @@ $(document).ready(function () {
     });
     
     //Accordion
-  $('.acordion-title')
-
-  $('#accordion a').click(function(event) {
+  $('.accordionButton').click(function(event) {
     event.preventDefault();
     $(this).toggleClass('openred');
     $accordion_title = $(this);
     $accordion_content = $(this).next('.accordion-list');
     $('.accordion-list').not($accordion_content).slideUp();
-    $('.accordion-list').not($accordion_content).prev('#accordion a').removeClass('openred');
+    $('.accordion-list').not($accordion_content).prev('.accordionButton').removeClass('openred');
     $accordion_content.stop(true, true).slideToggle(400);
     if ($(this).hasClass('openred')) {
       ScrollToTop();
