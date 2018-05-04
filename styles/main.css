@@ -141,7 +141,7 @@ responsive-nav-is-clean
     .topnav .navresp {display: none; padding: 16px 0px;}
     .topnav .menu {
         display: block;
-        padding: 13px 0px; 
+        padding: 12px 0px 0px; 
     }
 }
 @media screen and (min-width: 931px) {
@@ -605,15 +605,18 @@ Responsive
     padding: 0px 40px;
     }
 
-    h2 {font-size: 30px;}
+    h2 {font-size: 28px;}
     p {font-size: 17px;}
     
-    .nav-left img{
-        width: 35px;
-        height: 35px;
+    #navcontainer {
+    padding: 18px 5% !important;
     }
     
-    .header-img-defin {background-position: left;}
+    .nav-left img{
+        width: 30px;
+        height: 30px;
+    }
+    .header-img-defin {background-position: left; top: 60px}
     .header-img-defin.header-img-start {background-position: right;}
     .header-img-defin.header-img-lage {background-position: center;}
     
