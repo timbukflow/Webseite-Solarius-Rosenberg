@@ -64,6 +64,7 @@ hauptnav-is-clean
     position: fixed;
     transition: 0.5s;
     z-index: 100;
+    top: 0;
 }
 
 .nav-left  {
@@ -179,10 +180,21 @@ fullscreen-img-transition-fix
     transform: scale(1.1);
 }
 
+.header-img-kontakt {
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; 
+}
+
 .header-img-start {background-image: url("../img/solarius-rosenberg-home-header.jpg");}
 .header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
 .header-img-miete {background-image: url("../img/solarius-rosenberg-miete-kueche.jpg");}
 .header-img-lage {background-image: url("../img/solarius-rosenberg-lage-stgallen-saentis.jpg");}
+.header-img-kontakt {background-image: url("../img/solarius-rosenberg-drohnenaufnahme-st-gallen.jpg");}
 /*---------------------------------- 
 section-stage-is-clean
 -----------------------------------*/
@@ -493,33 +505,73 @@ footer-is-clean
     display: inline-block;
 }
 
-.footer-25 {
+.footer-25, .impressum {
     list-style-type: none;
     width: 25%;
     padding: 6px;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     float: left;
 }
 
 .footer-25 li {
     padding: 10px 6px 8px 6px;
     border-bottom: 1px solid rgb(200,200,200);
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
     letter-spacing: 0.6px;
+    text-align: left;
 }
 
 .footer-title {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 1070px) {
-    .footer-25 {
-        width: 50%;
-        margin-bottom: 20px;
-        margin-top: 0px;
-    }
+.footer-container-kontakt {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    padding: 0 5%;
+}
+
+/*---------------------------------- 
+impressum
+-----------------------------------*/
+
+#impressum {
+    width: 100%;
+    display: none;
+}
+
+.impressum {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#impressum article {
+    width: 25%;
+    margin-top: 40px;
+    float: left;
+}
+
+.impressum p, .impressum p a  {
+    padding: 10px 20px 0px 6px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-align: left;
+}
+.impressum p a {
+     padding: 10px 20px 0px 0px;
+}
+
+.impressum h3 {
+    padding: 10px 6px 8px 6px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    text-align: left;
 }
 
 /*---------------------------------- 
@@ -527,12 +579,12 @@ a-is-clean
 -----------------------------------*/
 
 a:link {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
@@ -565,6 +617,21 @@ Responsive
         width: 50%;
         margin-top: 0px;
         margin-bottom: 80px
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .footer-25 {
+        width: 50%;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .footer-container-kontakt {
+        margin-top: 40px;
+    }
+    
+    #impressum article {
+    width: 50%;
     }
 }
 
@@ -624,11 +691,12 @@ Responsive
     .section-second-container, .footer-grundriss {padding: 0;}
     .article-main-p {margin-bottom: 80px; margin-top: 40px;}
     .dropdown {display: none;}
-    .article-main-container h1, .footer-grundriss, .footer-25 {width: 100%;}
+    .article-main-container h1, .footer-grundriss, .footer-25, #impressum article {width: 100%;}
     .article-50-container h2, .article-50-container p,
     .footer-grundriss h2, .footer-grundriss p {padding: 0px 5%;}
     .f-g-nav-container {padding: 0px 5%}
-    .f-g-nav-container .l, .f-g-nav-container .r {padding: 0px;
+    .f-g-nav-container .l, .f-g-nav-container .r {padding: 0px;}
+    .header-img-kontakt {display: none;}
 }
 
     

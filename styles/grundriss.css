@@ -50,7 +50,9 @@ top-nav-grundriss-is-clean
     position: fixed;
     transition: 0.5s;
     z-index: 100;
+    top: 0;
 }
+
 
 /* ---------------------------------------
 nav-side-container
