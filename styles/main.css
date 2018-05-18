@@ -424,7 +424,7 @@ th, td {
 }
 
 td:first-child {
-    width: 60px;
+    width: 72px;
 }
 
 .dropdown:hover .table-content {visibility:visible; opacity:1;}
