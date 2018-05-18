@@ -5,7 +5,7 @@
 	 width="301px" height="99px" viewBox="0 0 301 99" enable-background="new 0 0 301 99" xml:space="preserve">
 <g>
 	<rect x="60.5" y="0.5" fill="none" stroke="#282828" stroke-miterlimit="10" width="120" height="14"/>
-	<rect x="0.5" y="14.5" fill="none" stroke="#282828" stroke-miterlimit="10" width="180" height="14"/>
+	<rect x="0.5" y="14.5" fill="#282828" stroke="#282828" stroke-miterlimit="10" width="180" height="14"/>
 	<rect x="0.5" y="28.5" fill="none" stroke="#282828" stroke-miterlimit="10" width="180" height="14"/>
 	<rect x="0.5" y="42.5" fill="none" stroke="#282828" stroke-miterlimit="10" width="180" height="14"/>
 	<rect x="0.5" y="56.5" fill="#E6E6E6" stroke="#282828" stroke-width="0.9992" stroke-miterlimit="10" width="180" height="14"/>

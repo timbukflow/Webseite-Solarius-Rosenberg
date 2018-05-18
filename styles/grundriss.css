@@ -62,16 +62,22 @@ nav-side-container
     width: 35%;
     background-color: white;
     position: fixed;
-    top: 82px;
+    height: 100vh;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 40px;
+    padding-top: 120px;
     padding-bottom: 150px;
     float: left;
+    background-color: rgba(245, 245, 245, 0.51);
 }
 
 .next{
     padding-left: 16px;
+    font-size: 47px;
+}
+
+.prev{
+    padding-right: 16px;
     font-size: 47px;
 }
 
@@ -139,7 +145,6 @@ grundrisse-container
     top: 82px;
     left: 35%;
     width: 65%;
-    background-color: rgba(245, 245, 245, 0.51);
 }
 
 .plan-container img {
@@ -170,7 +175,7 @@ grundriss-responsive
     .nav-side-container {
     width: 100%;
     position: relative;
-    top: 82px;
+    padding-top: 100px;
     }
     #nav-container-grundriss {
     position: absolute;
