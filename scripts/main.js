@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
     //main fade in
-    $('main').css('opacity', '1');
+    // $('main').css('opacity', '1');
     
     //Responsive Navigation
     $(".menu").click(function () {
