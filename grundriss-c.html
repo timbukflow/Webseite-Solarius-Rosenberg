@@ -2,13 +2,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Solarius Rosenberg Grundriss Haus C</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="robots" content="all">
         <meta name="robots" content="index, follow">
         <meta name="author" content="Solarius Rosenberg">
-        <meta name="description" content="Im Gebäude C entstehen 14 Wohnungen zur miete, davon neun 2.5 Zimmer und fünf 3.5 Zimmer Wohnungen.">
+        <meta name="description" content="Im Gebäude C entstehen 14 Wohnungen zur Miete, davon neun 2.5 Zimmer und fünf 3.5 Zimmer Wohnungen.">
         <meta name="keywords" content="Solarius, Rosenberg, St.Gallen, Eigentumswohnung, Terrassenhäuser, Greiffenstrasse, Grundrisse">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,17 +18,16 @@
         <meta property="og:type" content="business.business">
         <meta property="og:title" content="Solarius Rosenberg">
         <meta property="og:url" content="http://solarius-rosenberg.ch">
-        <meta property="og:image" content="http:///solarius-rosenberg.ch/img/solarius-rosenberg-home-header.jpg"> <!--CHECK THIS-->
+        <meta property="og:image" content="http:///solarius-rosenberg.ch/img/solarius-rosenberg-home-header.jpg">
         <meta property="business:contact_data:street_address" content="Greifenstrasse">
         <meta property="business:contact_data:locality" content="St.Gallen">
         <meta property="business:contact_data:region" content="9000">
         <meta property="business:contact_data:postal_code" content="9000">
         <meta property="business:contact_data:country_name" content="Switzerland">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/grundriss.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/grundriss.css">
         <link href="https://fonts.googleapis.com/css?family=Tinos:400,700" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="scripts/main.js"></script>
     </head>
     
     <body>
@@ -121,4 +120,11 @@
         <div class="plan-container">
             <img id="grundriss" src="img/srg-c-e5.svg">
         </div>
+    
+        <script src="scripts/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+        <script src="scripts/plugins.js"></script>
+        <script src="scripts/main.js"></script>
     </body>
+</html>  
