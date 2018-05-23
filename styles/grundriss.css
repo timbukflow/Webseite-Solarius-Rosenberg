@@ -48,6 +48,7 @@ top-nav-grundriss-is-clean
     width: 100%;
     padding: 20px 5%;
     position: fixed;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     z-index: 100;
     top: 0;
@@ -162,7 +163,11 @@ grundriss-responsive
 }
 
 @media screen and (max-width: 960px) {
-   .responsiv-map{
+    
+    body.background-grundriss {
+    background-color: white;
+    }
+    .responsiv-map{
     display: block;
     width: 100%;
     padding: 30px 20px 50px 20px;
