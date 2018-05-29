@@ -50,8 +50,14 @@ $(document).ready(function () {
     
     //Impressum
     
-    $('.disclamer').on('click', () => {
-        $('#impressum').fadeToggle(500);   
+
+    $('.togglelink').click(function() {
+        var totoggle = $(this).attr("data-toggle");
+        $(totoggle).toggle();
+        
+        if ($(totoggle).is(":visible")) {
+            $('html,body').animate({scrollTop:$(totoggle).offset().top}, 1000,'easeInOutExpo');
+        } 
+        
     });
-    
 });
