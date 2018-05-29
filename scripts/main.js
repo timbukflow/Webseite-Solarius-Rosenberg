@@ -2,13 +2,13 @@ $(document).ready(function () {
 
     //Responsive Navigation
     
-    $('.menu').on('click', () => {
+    $('.menu').click(function() {
         $('.menu').hide();
         $('.topnav .navresp').css('display', 'block');
         $('.close').css('display', 'block');
     });
     
-     $('.close').on('click', () => {
+     $('.close').click(function() {
         $('.menu').show();
         $('.topnav .navresp').hide();
         $('.close').hide();
@@ -27,7 +27,7 @@ $(document).ready(function () {
     
     //Accordion
     
-    $('.accordionButton').click(function(event) {
+    $('.accordionButton').click(function() {
         event.preventDefault();
         $(this).toggleClass('openred');
         $accordion_title = $(this);
