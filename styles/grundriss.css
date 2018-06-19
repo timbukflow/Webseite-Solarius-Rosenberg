@@ -93,6 +93,12 @@ nav-side-container
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.accordion-title a {
+    letter-spacing: 0.6px;
+    font-size: 18px;
+}
+
 .accordionButton:hover {
     color: red;
     cursor: pointer;
