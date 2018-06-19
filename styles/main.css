@@ -351,10 +351,10 @@ article-main-is-clean
     -webkit-transition: -webkit-transform 1s;
     transition: transform 1s;
 }
-
+/*
 .article-img-container:hover { 
     transform: scale(1.02);
-}
+}*/
 
 /*---------------------------------- 
 Dropdown-Bottom-is-clean
