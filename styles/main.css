@@ -265,59 +265,6 @@ Live Video
 }
 
 /*---------------------------------- 
-icon-scroll
------------------------------------*/
-/*
-.icon-scroll,
-.icon-scroll:before {
-    position: absolute;
-    left: 50%;
-    z-index: 3
-}
-
-.icon-scroll {
-    width: 36px;
-    height: 50px;
-    margin-left: -19px;
-    bottom: 50px;
-    margin-top: -30px;
-    box-shadow: inset 0 0 0 1px whitesmoke;
-}
-
-.icon-scroll:before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background: whitesmoke;
-    margin-left: -4px;
-    top: 10px;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: scroll;
-    animation-name: scroll;
-}
-
-@-webkit-keyframes scroll {
-    0% {opacity: 1;}
-    100% {
-        opacity: 0;
-        -webkit-transform: translateY(25px);
-        transform: translateY(25px);
-  }
-}
-
-@keyframes scroll {
-    0% {opacity: 1;}
-    100% {
-        opacity: 0;
-        -webkit-transform: translateY(25px);
-        transform: translateY(25px);
-  }
-}
-
-/*---------------------------------- 
 article-main-is-clean
 -----------------------------------*/
 
